@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light up | Emf</title>
+    <link rel="stylesheet" href="Assets/styles.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <!-- Navbar Component. -->
+    <div class="navbar m-5">
+    <ul class="flex align-items-center items-center">
+        <li class="nav logo"><img src = "Assets/logo.avif" width="70px"></li>
+        <div class="responsive middle w-full flex justify-center align-items-center">
+            <li class="nav nav_items text-small pr-6 nav_active"><a href = "index.html">Home</a></li>
+            <li class="nav nav_items text-small pr-6"><a href = "about-us.html">About Us</a></li>
+            <li class="nav nav_items text-small pr-6"><a href = "team.html">Our Team</a></li>
+            <li class="nav nav_items text-small pr-6">
+                <a href="#" class="nav nav_items text-small cursor-pointer">Our Programs</a>
+                <div class="nav-dropdown z-3">
+                    <a href="projects/project-phoenix.html" >Project Phoenix</a>
+                    <a href="projects/rishta-khud-se.html" >Rishta Khud Se</a>
+                    <a href="projects/lightup-academy.html" >Light Up Academy</a>
+                    <a href="projects/wings-of-azadi.html" >Wings of Azadi</a>
+                    <a href="projects/covid19-relief-work.html" >Covid-19 Relief Work</a>
+                </div>
+            </li>
+            <li class="nav nav_items text-small pr-6"><a href = "media.html">Our Impact</a></li>
+
+        </div>
+        <div class="mobile">
+
+        </div>
+    <li class="nav ml-auto"><button class="btn p-3 w-[140px] rounded-lg bg-[#E25C33] font-semibold text-sm text-white flex items-center justify-center"><img src = "Assets/Giving.png" class = "mr-2" width="20px">Donate Now</button></li>
+    </ul>
+    </div>
+    <!-- Hero Section -->
+    <div class="w-full mb-20">
+    <div class="hero flex justify-center w-full ">
+        <p class="text-6xl text-center title leading-tight">Empowering Children & Youth Of India’s
+            <br/><span class="animated_text ">Marginalised</span>  Communities</p>
+    </div>
+    <div class="image-stack flex items-center align-self-center justify-center" id="imageStack">
+        <img src="Assets/home gallery/Rectangle 8.png" class="active_2" alt="Image 1">
+        <img src="Assets/home gallery/Rectangle 9.png" class = "active_2 ml-3" alt="Image 2">
+        <img src="Assets/home gallery/School.jpeg" class = "active_2 ml-8" alt="Image 3">
+        <img src="Assets//home gallery/Rectangle 101.png" class = "active_2 ml-12" alt="Image 4">
+        <img src="Assets//home gallery/PHOENIX046.JPG" class = "active_2 ml-12" alt="Image 5">
+    </div>
+<div class="flex justify-center mt-3 values">
+    <div><span class="text-xl fadein px-14 gap-3 rounded-sm flex items-center"><img src="Assets/socio.png" class = "img_values">Social Emotional Learning</span></div>
+    <div><span class="text-xl fadein px-14 gap-3 rounded-sm flex items-center"><img src="Assets/centuryskil.png" class = "img_values" >21st Century Skills</span></div>
+    <div><span class="text-xl gap-4 px-14 rounded-sm  flex items-center fadein"><img src="Assets/Leadership.png" class = "img_values" >Grass-root Leadership</span></div>
+
+</div>
+</div>
+<!-- About us section -->
+ <section data-aos="fade-in" class="section">
+    <p  class="text-2xl font-semibold">About us</p>
+    <div  class="contain flex flex-row about_us">
+    <div class="container_left w-[50%] p-5">
+        <img src="Assets/Group 29.svg" alt="Team image">
+    </div>
+    <div class="container_right ml-auto about_us_content w-[40%] font_prata text-4xl p-5">
+        <div>
+            Light Up (Emotion Matters Foundation) <span data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-out" class="text-[#6d6d6d] font_prata">develops programs that build skills in</span> Children & Young adults 
+            <span data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-easing="ease-in-out"  class="text-[#6d6d6d] font_prata">to break the cycle of</span> generational trauma and become social change
+            <span data-aos="fade-right" data-aos-delay="2000" data-aos-duration="2000" class="text-[#6d6d6d] font_prata"> agents in the marginalised communities.</span>
+        </div>
+        <button class="btn btn_arrow text-lg mt-6 text-center"><span class="ml-10">Learn More</span> <img width="50px" src="Assets/Arrow diagonal.png" rel = "right arrow" /></button>
+    </div>
+    
+</div>
+ </section>
+ <section data-aos="fade-in" class="section">
+ <div class="slider-container">
+    <div class="slider-track">
+        <!-- Original set of logos -->
+        <div class="slide"><img width="200px" src="Assets/logo/logo1.png" alt="Logo 1"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo2.png" alt="Logo 2"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo3.png" alt="Logo 3"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo4.png" alt="Logo 4"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo5.png" alt="Logo 5"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo6.jpg" alt="Logo 1"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo7.png" alt="Logo 2"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo8.png" alt="Logo 3"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo9.png" alt="Logo 4"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo10.png" alt="Logo 5"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo11.jpg" alt="Logo 1"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo12.jpg" alt="Logo 2"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo13.png" alt="Logo 3"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo14.png" alt="Logo 4"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo16.jpg" alt="Logo 1"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo17.jpg" alt="Logo 2"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo18.png" alt="Logo 3"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo19.png" alt="Logo 4"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo20.png" alt="Logo 5"></div>
+        <div class="slide"><img width="200px" src="Assets/logo/logo21.jpg" alt="Logo 1"></div>
+    </div>
+</div>
+</section>
+<!-- Our Programs -->
+<section class="section block mt-10" id="programs"> 
+    <p class="text-2xl font-semibold programs_heading">Our Programs</p>
+    
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-1/3">
+                <div id="programList" class="space-y-2"></div>
+            </div>
+            <div class="program_content ml-auto w-[470px] ">
+                <div id="programDetails" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img id="programImage" src="" alt="" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 id="programName" class="text-xl font-semibold mb-2"></h3>
+                        <p id="programDescription" class="text-gray-600"></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+</section>
+ <!-- Our Impact -->
+ <section class="section block mt-10" id="impact"> 
+    <p  class="text-2xl font-semibold">Our Impact</p>
+    <div class="impactpics flex justify-between mt-10">
+        <img src="Assets/impactphoto2.png" class="w-[46%] h-[355px] object-cover rounded-2xl" alt="" />
+        <a href = "https://www.youtube.com/watch?v=ntirs652mfY&t=2s" class="w-[50%]" target="_blank"><img class="w-full object-cover rounded-2xl h-[355px]" src="Assets/impact_photo1.png" alt=""  /></a>
+    </div>
+    <div class="impact">
+        <p class="text-white text-4xl w-[400px] ml-10 mt-14">Light Up (EMF) - A beacon of hope in the darkness - illuminating the path and ingniting the spirits of children and youth in India. </p>
+    </div>
+     <div class="numbers flex justify-between p-12 bg-[#E25C33]  mb-5 text-white" id = "numbers">
+        <div class="num text-center text-2xl">
+            <span data-target="76" class="text-5xl font-semibold counter">0</span><span class = "text-5xl font-semibold">K+</span><br>
+            Beneficiaries
+        </div>
+        <div class="num text-center text-2xl">
+            <span data-target="130" class="text-5xl font-semibold counter">0</span><span class = "text-5xl font-semibold">+</span><br>
+            Partners    
+        </div>
+        <div class="num text-center text-2xl">
+            <span data-target="2000" class="text-5xl font-semibold counter">0</span><span class = "text-5xl font-semibold">+</span><br>
+            No of Workshops
+        </div>
+        <div class="num text-center text-2xl">
+            <span data-target="1" class="text-5xl font-semibold counter">0</span><span class = "text-5xl font-semibold">L+</span><br>
+            Learning hours
+        </div>
+    </div>
+</section>
+<!-- Testimonials -->
+<section data-aos="fade-in" class="testimonials section mt-10">
+    <p  class="text-2xl font-semibold mb-5">Testimonials</p>
+    <!-- testimonial 1 -->
+    <div class="testimonial flex ">
+        <img width = "80px" class="image_avatar" src = "Assets/Avatars/6.png" alt = ""/>
+        <div class="testimonial-content">
+        <p class="text-2xl font-semibold">Suhail Khan</p>
+        <p class="text-xl w-[100%] ">“Project Phoenix gave me an opportunity to rewrite my story, reclaim my identity and live an independent life with dignity.</p>
+        </div>
+        <div class="flex ml-auto">
+            <img class="image_quote" src = "Assets/image 50.png" />
+        </div>
+    </div>
+    <!-- testiomonial 2 -->
+    <div class="testimonial flex">
+        <img width = "80px" class="image_avatar" src = "Assets/Avatars/2.png" alt = ""/>
+        <div class="testimonial-content">
+            <p class="text-2xl font-semibold">Sana Sheikh</p>
+            <p class="text-xl w-[100%]  ">“Life ho out of control , light up mein khul ke bol.</p>
+            </div>
+        <div class="flex ml-auto">
+            <img class = "image_quote" src = "Assets/image 50.png" />
+        </div>
+    </div>
+    <!-- testimonial 3  -->
+    <div class="testimonial flex">
+        <img width = "80px" class="image_avatar" src = "Assets/Avatars/3.png" alt = ""/>
+        <div class="testimonial-content">
+            <p class="text-2xl font-semibold">Bobby</p>
+            <p class="text-xl w-[100%] ">“I learned to turn my pain into strength and my challenges into opportunities.</p>
+            </div>
+        <div class="flex ml-auto">
+            <img class="image_quote" src = "Assets/image 50.png" />
+        </div>
+    </div>
+    <!-- testiomonial 4 -->
+    <div class="testimonial flex">
+        <img width = "80px" class="image_avatar" src = "Assets/Avatars/4.png" alt = ""/>
+        <div class="testimonial-content">
+            <p class="text-2xl font-semibold">Tanisha Gandhi</p>
+            <p class="text-xl w-[100%] ">“Project Phoenix taught me that my past doesn’t define my future.</p>
+            </div>
+        <div class="flex ml-auto">
+            <img class="image_quote" src = "Assets/image 50.png" />
+        </div>
+    </div>
+</section>
+
+<!-- Contact us section -->
+ <section  class="section mt-12" id = "contact_us ">
+    <p  class="text-2xl font-semibold mb-5">Contact us</p>
+    <div class="subheading">
+    <p class="text-small">If you’re curious about how social behaviour change can drive power of positive change to improve well-being for all, we want to hear from you. 
+        <br>
+        We’re always looking for motivated, independent, creative thinkers to join our journey.
+        <br>
+        <br>
+        <strong>Write to us at contact@lightupei.in</strong>
+    </p>
+
+    </div>
+    <div class="mt-3 form_container flex justify-between">
+        <div class="left_form mt-auto mb-auto">
+        <div class="name_container gap-10 flex">       
+        <!-- A text input -->
+            <div class="flex flex-col">
+                <label class = "font-semibold text-lg" for="firstname">First Name</label>
+                <input type="text"  name="firstname" placeholder="First Name" class="input_form p-3">
+            </div>
+        <!-- A text input ends -->
+        <!-- A text input -->
+            <div class="flex flex-col">
+                <label class = "font-semibold text-lg" for="firstname">Last Name</label>
+                <input type="text"  name="lastname" placeholder="Last Name" class="input_form p-3">
+            </div>
+        <!-- A text input ends -->
+        </div>
+        
+        <div class="flex flex-col mt-6">
+            <label class = "font-semibold text-lg" for="firstname">Email</label>
+            <input type="email"  name="email" placeholder="Email ID xyz@gmail.com" class="input_form p-3">
+        </div>
+        <div class="flex flex-col mt-6">
+            <label class = "font-semibold text-lg" for="firstname">Phone</label>
+            <input type="email"  name="email" placeholder="Phone no like 91XXXXXXXX" class="input_form p-3">
+        </div>
+        <div class="flex flex-col mt-6">
+            <label class = "font-semibold text-lg" for="firstname">Message</label>
+            <textarea name="message" id="message" placeholder="Leave us a message" class="input_form p-3"></textarea>
+        </div>
+        <button type="submit" class="w-full text-center bg-[#EF7427] p-3 font-semibold text-white rounded-md mt-6 mb-6">Send Message</button>
+        </div>
+        <div class="right_image responsive">
+            <img src="Assets/heartimage.png" class="m-20" width="500px" alt = "heartimage"/>
+        </div>
+    </div>
+ </section>
+
+ <!-- Stay updated -->
+ <section class="section">   
+    <div class="stay_updated flex justify-between" id = "stay_updated">
+        <p class="text-5xl font-bold text-white">Stay <br>updated <br>About us!</p>
+        <div class="flex items-center subscribe_div">
+        <input type="text" class="subscribe" placeholder="Your email xyz@gmail.com" />
+        <img src="Assets/aeroplaneicon.png" class="aeroicon"/>
+    </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="section lightup-footer ">
+    <div class="lightup-footer__content">
+        <div class="lightup-footer__logo-section">
+            <div class="lightup-footer__logo">
+                <img class="lightup-footer__logo-image" src="Assets/logo.avif">
+                Light Up
+            </div>
+            <div class="lightup-footer__slogan text-lg">Supporting Marginalized<br>and undeserved<br>communities</div>
+        </div>
+        <div class="lightup-footer__links-section gap-5 ">
+            <div class="lightup-footer__links-column">
+                <h3 class="lightup-footer__column-title font-bold text-xl">Important Links</h3>
+                <ul class="lightup-footer__link-list">
+                    <li class="lightup-footer__link-item"><a href="media.html" class="lightup-footer__link">Our Impact</a></li>
+                    <li class="lightup-footer__link-item"><a href ="Terms-&-conditions.html" class="lightup-footer__link">Terms and Conditions</a></li>
+                    <li class="lightup-footer__link-item"><a href ="privacy-policy.html" class="lightup-footer__link">Privacy Policy</a></li>
+                    <li class="lightup-footer__link-item"><a href ="refund-policy.html" class="lightup-footer__link">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="lightup-footer__links-column responsive">
+                <h3 class="lightup-footer__column-title font-bold text-xl">Help</h3>
+                <ul class="lightup-footer__link-list">
+                    <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="lightup-footer__links-column responsive">
+                <h3 class="lightup-footer__column-title font-bold text-xl">Donate</h3>
+                <ul class="lightup-footer__link-list">
+                    <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Collaborate</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lightup-footer__bottom">
+        <div class="lightup-footer__copyright responsive">
+            © Light up (Emotions Matter Foundation) All Rights Reserved. 
+            <p>Design By <a href ="https://www.linkedin.com/in/sneha-singhal-1aa953201/" target="_blank"><span class="text-yellow-400">Sneha Singhal</span></a></p>
+        </div>
+        <div class="lightup-footer__social-icons">
+            <a href="https://www.instagram.com/lightupei" class="lightup-footer__social-link flex items-center btn_social" target="_blank" aria-label="Instagram"><img  class = "social" src = "Assets/Instagram.png"/><span class="responsive">Instagram</span></a>
+            <a href="https://www.facebook.com/LightupEQ" target="_blank" class="lightup-footer__social-link flex items-center btn_social" aria-label="Facebook"><img  class = "social" src = "Assets/Facebook F.png"/><span class="responsive">Facebook</span></a>
+            <a href="https://www.linkedin.com/company/lightup03/mycompany/?viewAsMember=true" target="_blank" class="lightup-footer__social-link flex items-center btn_social" aria-label="LinkedIn"><img class = "social"  src = "Assets/LinkedIn.png"/><span class="responsive">LinkedIn</span></a>
+            <a href="https://www.youtube.com/@lightup8871" target="_blank" class="lightup-footer__social-link flex items-center btn_social " aria-label="YouTube"><img  class = "social" src = "Assets/YouTube.png"/><span class="responsive">YouTube</span></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    const slider = document.getElementById('imageSlider');
+    const slides = slider.getElementsByClassName('slider-image');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    // Show the first slide
+    showSlide(0);
+
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
+</script>
+<script>
+    AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+<script src = "Assets/animate.js"></script>
+<script src = "Assets/accordian.js"></script>
+</html>

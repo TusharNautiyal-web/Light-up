@@ -1,0 +1,48 @@
+.bg-approach-1{
+    background-image: url("Assets/about-us/rec1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+.bg-approach-2{
+    background-image: url("Assets/about-us/rec2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+.bg-approach-3{
+    background-image: url("Assets/about-us/rec3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+.bg-approach-4{
+    background-image: url("Assets/about-us/rec4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+.bg-approach-5{
+    background-image: url("Assets/about-us/rec5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+@media screen and (max-width: 1110px) {
+.left_container {
+    width: 100% !important;
+}
+.who-content-container{
+    display: flex !important;
+    width: auto !important;
+    flex-direction: column !important;
+}   
+.right_container{
+    margin-left: 0 !important;
+}
+}

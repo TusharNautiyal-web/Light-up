@@ -1,0 +1,112 @@
+.impact-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 90%;
+}
+.impact-section {
+    background-color: #f8d7d1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.impact-section--highlight {
+    background-color: #ffa07a;
+}
+.impact-title {
+    margin: 0 0 15px 0;
+    font-size: 1.4vw;
+    color: #333;
+    text-align: center;
+}
+.impact-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.impact-stat {
+    text-align: center;
+    flex: 1 1 30%;
+    margin-bottom: 15px;
+}
+.impact-stat__number {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #d2691e;
+    margin-bottom: 5px;
+}
+.impact-stat__label {
+    font-size: 0.9vw;
+    color: #2b2b2b;
+}
+@media (max-width: 600px) {
+    .impact-stat {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+    .impact-section {
+        padding: 15px;
+    }
+    .impact-stat__number {
+        font-size: 1.5em;
+    }
+    .impact-stat__label {
+        font-size: 0.8em;
+    }
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.image-item {
+    position: relative;
+    overflow: hidden;
+}
+.image-item img {
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+.hover-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.hover-links a {
+    color: rgb(22, 22, 22);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+.image-item:hover .hover-links {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

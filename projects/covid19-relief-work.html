@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light up | Emf</title>
+    <link rel="stylesheet" href="../Assets/styles.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <!-- Navbar Component. -->
+    <div class="navbar m-5">
+        <ul class="flex align-items-center items-center">
+            <li class="nav logo"><img src = "../Assets/logo.avif" width="70px"></li>
+            <div class="responsive middle w-full flex justify-center align-items-center">
+                <li class="nav nav_items text-small pr-6 "><a href = "../index.html">Home</a></li>
+                <li class="nav nav_items text-small pr-6 "><a href = "../about-us.html">About Us</a></li>
+                <li class="nav nav_items text-small pr-6"><a href = "../team.html">Our Team</a></li>
+                <li class="nav nav_items text-small pr-6">
+                    <a href="#" class="nav nav_items text-small nav_active cursor-pointer">Our Programs</a>
+                    <div class="nav-dropdown z-3">
+                        <a href="project-phoenix.html" >Project Phoenix</a>
+                        <a href="rishta-khud-se.html" >Rishta Khud Se</a>
+                        <a href="lightup-academy.html" >Light Up Academy</a>
+                        <a href="wings-of-azadi.html" >Wings of Azadi</a>
+                        <a href="covid19-relief-work.html" >Covid-19 Relief Work</a>
+                    </div>
+                </li>
+                <li class="nav nav_items text-small pr-6"><a href = "../media.html">Our Impact</a></li>
+    
+            </div>
+            <div class="mobile">
+    
+            </div>
+        <li class="nav ml-auto"><button class="btn p-3 w-[140px] rounded-lg bg-[#E25C33] font-semibold text-sm text-white flex items-center justify-center"><img src = "../Assets/Giving.png" class = "mr-2" width="20px">Donate Now</button></li>
+        </ul>
+        </div>
+
+
+        <!-- First section -->
+    <section class="section mt-10">
+        <p class="text-4xl">Covid-19 Relief Work</p>
+        <p class="text-lg"></p>
+    </section>
+            <!-- Section 1: Image Left, Content Right -->
+            <section class="flex flex-col md:flex-row mt-10 mb-12 section">
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                    <img src="covid19-relief-work/1.png" alt="Placeholder image" class="w-[70%] object-cover h-[400px] rounded-lg shadow-md">
+                </div>
+                <div class="w-[40%] ml-auto">
+                    <h2 class="text-2xl font-bold mb-4">What is <span style="color: #EF7427">Covid-19 Relief Work ?</span></h2>
+                    <p class="text-gray-900 text-xl">
+                        With the help of 25 partners, the project successfully provided various forms of SOS aid to a total of 20K beneficiaries from the sex workers community in G.B. Road, Sanjay Camp Chankayapuri, and Pulbangash community in New Delhi. These included essential supplies such as ration, sanitary napkins, hygiene kits, and milk powder packets, as well as financial aid, phone recharge, stipends to community leaders, transport, and phone handsets to students.
+                    </p>
+                </div>
+            </section>
+<!-- Section 2 -->
+            <section class="flex flex-col md:flex-row-reverse items-center section">
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                    <img src="covid19-relief-work/3.png" alt="Placeholder image" class="ml-auto w-[500px] object-contain h-[700px] rounded-lg shadow-md">
+                </div>
+                <div class="w-full md:w-1/2 md:pr-8">
+                    <h2 class="text-2xl font-bold mb-4">Project SEL- COVID Kit:</h2>
+                    <p class="text-gray-900 text-xl">
+                        An aim to enable children with tools to develop social-emotional coping skills at home to regulate themselves emotionally and be able to manage the crisis at hand on a day to day basis. The kit offered 6 day engagement in a week, self-paced activities contextualized to the pandemic crises and promoted parent-child participation.
+                    </p>
+                </div>
+            </section>
+    <!-- Section 3 -->
+     <!--  -->
+            <section class="flex flex-col md:flex-row mt-10 items-center mb-12 section">
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                    <img src="covid19-relief-work/2.png" alt="Placeholder image" class="w-[80%] h-[400px] object-cover rounded-lg shadow-md">
+                </div>
+                <div class="w-[40%] ml-auto">
+                    <h2 class="text-2xl font-bold mb-4">Project Mission Bridge:</h2>
+                    <p class="text-gray-900 text-xl">
+                        An initiative aimed to bridge the gap between state welfare schemes and beneficiaries, focusing on 100 families from urban slums. By addressing structural, mental, and accessibility barriers, the project helped these families avail the rightful safety nets offered by the government. 
+                    </p>
+                </div>
+            </section>
+
+    <!-- Gallery Section -->
+     <section id = "Gallery" class="section">
+        <p  class="text-2xl font-semibold mb-5">Gallery
+        </p>
+        <div class="max-w-10xl mx-auto">
+            <div class="relative overflow-hidden">
+                <div id="gallery-wrapper" class="flex gap-2 transition-transform duration-300 ease-in-out">
+                    <img src="covid19-relief-work/Gallery/1.jpg" alt="Image 2" class="w-full sm:w-1/3 h-100 object-cover flex-shrink-0">
+                    <img src="covid19-relief-work/Gallery/2.jpg" alt="Image 3" class="w-full sm:w-1/3 h-100 object-cover flex-shrink-0">
+                    <img src="covid19-relief-work/Gallery/3.jpg" alt="Image 5" class="w-full sm:w-1/3 h-100 object-cover flex-shrink-0">
+                    <img src="covid19-relief-work/Gallery/4.JPG" alt="Image 6" class="w-full sm:w-1/3 h-100 object-cover flex-shrink-0">
+                    <img src="covid19-relief-work/Gallery/5.jpg" alt="Image 7" class="w-full sm:w-1/3 h-100 object-cover flex-shrink-0">
+                </div>
+                <button id="prev-button" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button id="next-button" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Footer --> 
+    <footer class="section lightup-footer ">
+        <div class="lightup-footer__content">
+            <div class="lightup-footer__logo-section">
+                <div class="lightup-footer__logo">
+                    <img class="lightup-footer__logo-image" src="../Assets/logo.avif">
+                    Light Up
+                </div>
+                <div class="lightup-footer__slogan text-lg">Supporting Marginalized<br>and undeserved<br>communities</div>
+            </div>
+            <div class="lightup-footer__links-section gap-5 ">
+                <div class="lightup-footer__links-column">
+                    <h3 class="lightup-footer__column-title font-bold text-xl">Important Links</h3>
+                    <ul class="lightup-footer__link-list">
+                        <li class="lightup-footer__link-item"><a href="../media.html" class="lightup-footer__link">Our Impact</a></li>
+                        <li class="lightup-footer__link-item"><a href ="../Terms-&-conditions.html" class="lightup-footer__link">Terms and Conditions</a></li>
+                        <li class="lightup-footer__link-item"><a href ="../privacy-policy.html" class="lightup-footer__link">Privacy Policy</a></li>
+                        <li class="lightup-footer__link-item"><a href ="../refund-policy.html" class="lightup-footer__link">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="lightup-footer__links-column responsive">
+                    <h3 class="lightup-footer__column-title font-bold text-xl">Help</h3>
+                    <ul class="lightup-footer__link-list">
+                        <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="lightup-footer__links-column responsive">
+                    <h3 class="lightup-footer__column-title font-bold text-xl">Donate</h3>
+                    <ul class="lightup-footer__link-list">
+                        <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Collaborate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lightup-footer__bottom">
+            <div class="lightup-footer__copyright responsive">
+                © Light up (Emotions Matter Foundation) All Rights Reserved.
+            </div>
+            <div class="lightup-footer__social-icons">
+                <a href="https://www.instagram.com/lightupei" class="lightup-footer__social-link flex items-center btn_social" target="_blank" aria-label="Instagram"><img  class = "social" src = "../Assets/Instagram.png"/><span class="responsive">Instagram</span></a>
+                <a href="https://www.facebook.com/LightupEQ" target="_blank" class="lightup-footer__social-link flex items-center btn_social" aria-label="Facebook"><img  class = "social" src = "../Assets/Facebook F.png"/><span class="responsive">Facebook</span></a>
+                <a href="https://www.linkedin.com/company/lightup03/mycompany/?viewAsMember=true" target="_blank" class="lightup-footer__social-link flex items-center btn_social" aria-label="LinkedIn"><img class = "social"  src = "../Assets/LinkedIn.png"/><span class="responsive">LinkedIn</span></a>
+                <a href="https://www.youtube.com/@lightup8871" target="_blank" class="lightup-footer__social-link flex items-center btn_social " aria-label="YouTube"><img  class = "social" src = "../Assets/YouTube.png"/><span class="responsive">YouTube</span></a>
+            </div>
+        </div>
+    </footer>
+
+   </body>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    const slider = document.getElementById('imageSlider');
+    const slides = slider.getElementsByClassName('slider-image');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    // Show the first slide
+    showSlide(0);
+
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
+</script>
+<script>
+    AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+<script src = "../Assets/animate.js"></script>
+<script src = "gallery.js"></script> 
+</html> 
