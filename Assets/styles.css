@@ -46,6 +46,11 @@
         width: 100% !important;
         margin-left: 0 !important;
     }
+    .subscribe{
+        width: 100% !important;
+        font-size: 14px !important;
+
+    }
 
 
 }
@@ -123,7 +128,7 @@
     font-weight: 300;
     font-style: normal;
   }
-  
+
   .sulphur-point-regular {
     font-family: "Sulphur Point", sans-serif;
     font-weight: 400;
@@ -355,6 +360,7 @@
     margin-top: 10px;
 }
 .subscribe{
+    width: 300px;
     border-radius: 100px;
     outline: 0;
     padding: 20px;
