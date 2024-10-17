@@ -3,11 +3,29 @@
 
 /* Responsiveness design */
 @media screen and (orientation: portrait) {
+    .imp_text{
+        width: 300px !important;
+        font-size: 30px !important;
+    }
+    .about_us_content{
+        font-size: 20px !important;
+    }
+    .num{
+        line-height: 0;
+        font-size: 10px !important;
+    }
+    .counter,.tags{
+        line-height: 0;
+        font-size: 20px !important;
+    }
     .mobile{
         display: block;
     }
     .responsive{
         display: none !important;
+    }
+    .image_2{
+        width: 100% !important;
     }
     .title{
         font-size: 32px !important;
@@ -36,6 +54,20 @@
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+    .testimonial-content p:nth-child(1){
+        font-size: 20px !important;
+    }
+    .testimonial-content p:nth-child(2){
+        font-size: 15px !important;
+    }
+    .testimonial{
+        padding: 10px !important;
+        margin: 10px !important;
+        margin-left: 40px !important;
+    }
+    .image_avatar{
+        transform: translateX(-50px) !important;
+    }
     .stay_updated{
         padding: 20px !important;
         flex-direction: column;
@@ -47,9 +79,8 @@
         font-size: 30px !important;
     }
     footer{
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-        width: 97% !important;
+
+        width: 100% !important;
     }
     .image-stack{
         width: 90% !important;
@@ -327,7 +358,6 @@
     border-radius: 100px;
     outline: 0;
     padding: 20px;
-    width: 300px;
     height: 50px;
 }
 .stay_updated{
