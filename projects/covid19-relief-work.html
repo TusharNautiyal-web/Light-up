@@ -18,7 +18,8 @@
 </head>
 <body>
     <!-- Navbar Component. -->
-    <div class="navbar m-5">
+    <div class="navbar m-5 hidden lg:block">
+
         <ul class="flex align-items-center items-center">
             <li class="nav logo"><img src = "../Assets/logo.avif" width="70px"></li>
             <div class="responsive middle w-full flex justify-center align-items-center">
@@ -36,7 +37,6 @@
                     </div>
                 </li>
                 <li class="nav nav_items text-small pr-6"><a href = "../media.html">Our Impact</a></li>
-    
             </div>
             <div class="mobile">
     
@@ -45,6 +45,55 @@
         </ul>
         </div>
 
+        <div class="mobile w-full flex">
+            <img src="../Assets/logo.avif" class="lg:hidden" width="70px" alt="Logo">
+            <button id="mobile-menu-button" class="lg:hidden ml-auto mr-3 text-orange-500 hover:text-orange-600 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+            
+            <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-white">
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-4">
+                  <button id="close-menu-button" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+                <nav data-aos="fade-in">
+                  <ul class="space-y-4">
+                    <li><a href="../index.html" class="block py-2 text-gray-800 hover:text-gray-900">Home</a></li>
+                    <li><a href="../about-us.html" class="block py-2 text-gray-800 hover:text-gray-900">About Us</a></li>
+                    <li><a href="../team.html" class="block py-2 text-gray-800 hover:text-gray-900">Our Team</a></li>
+                    <li>
+                      <button id="dropdown-toggle" class="flex items-center justify-between w-full py-2 text-gray-800 hover:text-gray-900">
+                        Our Programs
+                        <svg class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </button>
+                      <ul id="dropdown-menu" class="hidden ml-4 mt-2 space-y-2">
+                        <li><a href="project-phoenix.html" class="block py-2 text-gray-800 hover:text-gray-900">Project Phoenix</a></li>
+                        <li><a href="rishta-khud-se.html" class="block py-2 text-gray-800 hover:text-gray-900">Rishta Khud Se</a></li>
+                        <li><a href="lightup-academy.html" class="block py-2 text-gray-800 hover:text-gray-900">Light Up Academy</a></li>
+                        <li><a href="wings-of-azadi.html" class="block py-2 text-gray-800 hover:text-gray-900">Wings of Azadi</a></li>
+                        <li><a href="covid19-relief-work.html" class="block py-2 text-gray-800 hover:text-gray-900">Covid-19 Relief Work</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="../media.html" class="block py-2 text-gray-800 hover:text-gray-900">Our Impact</a></li>
+                  </ul>
+                </nav>
+                <div class="mt-6">
+                    <a href = "https://rzp.io/l/donate-LU-2"> <button class="btn w-full p-3 rounded-lg bg-[#E25C33] font-semibold text-sm text-white flex items-center justify-center">
+                  <img src="../Assets/Giving.png" class="mr-2" width="20px" alt="Donate icon">
+                    Donate Now
+                  </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <!-- First section -->
     <section class="section mt-10">
@@ -56,7 +105,7 @@
                 <div class="w-full md:w-1/2 mb-4 md:mb-0">
                     <img src="covid19-relief-work/1.png" alt="Placeholder image" class="w-[70%] object-cover h-[400px] rounded-lg shadow-md">
                 </div>
-                <div class="w-[40%] ml-auto">
+                <div class="w-full lg:w-[40%] ml-0 lg:ml-auto">
                     <h2 class="text-2xl font-bold mb-4">What is <span style="color: #EF7427">Covid-19 Relief Work ?</span></h2>
                     <p class="text-gray-900 text-xl">
                         With the help of 25 partners, the project successfully provided various forms of SOS aid to a total of 20K beneficiaries from the sex workers community in G.B. Road, Sanjay Camp Chankayapuri, and Pulbangash community in New Delhi. These included essential supplies such as ration, sanitary napkins, hygiene kits, and milk powder packets, as well as financial aid, phone recharge, stipends to community leaders, transport, and phone handsets to students.
@@ -81,7 +130,7 @@
                 <div class="w-full md:w-1/2 mb-4 md:mb-0">
                     <img src="covid19-relief-work/2.png" alt="Placeholder image" class="w-[80%] h-[400px] object-cover rounded-lg shadow-md">
                 </div>
-                <div class="w-[40%] ml-auto">
+                <div class="w-full lg:w-[40%] ml-0 lg:ml-auto">
                     <h2 class="text-2xl font-bold mb-4">Project Mission Bridge:</h2>
                     <p class="text-gray-900 text-xl">
                         An initiative aimed to bridge the gap between state welfare schemes and beneficiaries, focusing on 100 families from urban slums. By addressing structural, mental, and accessibility barriers, the project helped these families avail the rightful safety nets offered by the government. 
@@ -195,4 +244,5 @@
   </script>
 <script src = "../Assets/animate.js"></script>
 <script src = "gallery.js"></script> 
+<script src="../navbar.js"></script>
 </html> 

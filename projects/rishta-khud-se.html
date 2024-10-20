@@ -18,8 +18,7 @@
 </head>
 <body>
     <!-- Navbar Component. -->
-    <!-- Navbar Component. -->
-    <div class="navbar m-5">
+    <div class="navbar m-5  hidden lg:block">
         <ul class="flex align-items-center items-center">
             <li class="nav logo"><img src = "../Assets/logo.avif" width="70px"></li>
             <div class="responsive middle w-full flex justify-center align-items-center">
@@ -45,6 +44,55 @@
         <li class="nav ml-auto"><button class="btn p-3 w-[140px] rounded-lg bg-[#E25C33] font-semibold text-sm text-white flex items-center justify-center"><img src = "../Assets/Giving.png" class = "mr-2" width="20px">Donate Now</button></li>
         </ul>
         </div>
+        <div class="mobile w-full flex">
+            <img src="../Assets/logo.avif" class="lg:hidden" width="70px" alt="Logo">
+            <button id="mobile-menu-button" class="lg:hidden ml-auto mr-3 text-orange-500 hover:text-orange-600 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+            
+            <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-white">
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-4">
+                  <button id="close-menu-button" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+                <nav data-aos="fade-in">
+                  <ul class="space-y-4">
+                    <li><a href="../index.html" class="block py-2 text-gray-800 hover:text-gray-900">Home</a></li>
+                    <li><a href="../about-us.html" class="block py-2 text-gray-800 hover:text-gray-900">About Us</a></li>
+                    <li><a href="../team.html" class="block py-2 text-gray-800 hover:text-gray-900">Our Team</a></li>
+                    <li>
+                      <button id="dropdown-toggle" class="flex items-center justify-between w-full py-2 text-gray-800 hover:text-gray-900">
+                        Our Programs
+                        <svg class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </button>
+                      <ul id="dropdown-menu" class="hidden ml-4 mt-2 space-y-2">
+                        <li><a href="project-phoenix.html" class="block py-2 text-gray-800 hover:text-gray-900">Project Phoenix</a></li>
+                        <li><a href="rishta-khud-se.html" class="block py-2 text-gray-800 hover:text-gray-900">Rishta Khud Se</a></li>
+                        <li><a href="lightup-academy.html" class="block py-2 text-gray-800 hover:text-gray-900">Light Up Academy</a></li>
+                        <li><a href="wings-of-azadi.html" class="block py-2 text-gray-800 hover:text-gray-900">Wings of Azadi</a></li>
+                        <li><a href="covid19-relief-work.html" class="block py-2 text-gray-800 hover:text-gray-900">Covid-19 Relief Work</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="../media.html" class="block py-2 text-gray-800 hover:text-gray-900">Our Impact</a></li>
+                  </ul>
+                </nav>
+                <div class="mt-6">
+                    <a href = "https://rzp.io/l/donate-LU-2"> <button class="btn w-full p-3 rounded-lg bg-[#E25C33] font-semibold text-sm text-white flex items-center justify-center">
+                  <img src="../Assets/Giving.png" class="mr-2" width="20px" alt="Donate icon">
+                    Donate Now
+                  </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
     <!-- First section -->
     <section class="section mt-10">
         <p class="text-4xl">Rishta Khud Se</p>
@@ -53,9 +101,9 @@
             <!-- Section 1: Image Left, Content Right -->
             <section class="flex flex-col md:flex-row mt-10 mb-12 section">
                 <div class="w-full md:w-1/2 mb-4 md:mb-0">
-                    <img src="rishta-khud-se/1.png" alt="Placeholder image" class="w-[70%] object-cover h-[400px] rounded-lg shadow-md">
+                    <img src="rishta-khud-se/1.png" alt="Placeholder image" class="lg:w-[70%] object-cover h-[400px] rounded-lg shadow-md">
                 </div>
-                <div class="w-[40%] ml-auto">
+                <div class="lg:w-[40%] lg:ml-auto">
                     <h2 class="text-2xl font-bold mb-4">What is <span style="color: #EF7427">Rishta Khud Se ?</span></h2>
                     <p class="text-gray-900 text-xl">
                         Rishta Khud Se is a comprehensive SEL intervention in a form of continued support through Social and Emotional Learning workshops with children, capacity building sessions for teachers and awareness sessions with parents that aims to bring a positive shift in their emotional well-being and mental health.
@@ -65,7 +113,7 @@
 <!-- Section 2 -->
             <section class="flex flex-col md:flex-row-reverse items-center section">
                 <div class="w-full md:w-1/2 mb-4 md:mb-0">
-                    <img src="rishta-khud-se/2.png" alt="Placeholder image" class="ml-auto w-[80%] h-[400px] object-contain rounded-lg shadow-md">
+                    <img src="rishta-khud-se/2.png" alt="Placeholder image" class="lg:ml-auto lg:w-[80%] h-[400px] object-contain rounded-lg shadow-md">
                 </div>
                 <div class="w-full md:w-1/2 md:pr-8">
                     <p class="text-gray-900 text-xl">
@@ -80,9 +128,9 @@
     <!-- Section 3 -->
             <section class="flex flex-col md:flex-row mt-10 items-center mb-12 section">
                 <div class="w-full md:w-1/2 mb-4 md:mb-0">
-                    <img src="rishta-khud-se/3.png" alt="Placeholder image" class="w-[70%] object-cover h-[400px] rounded-lg shadow-md">
+                    <img src="rishta-khud-se/3.png" alt="Placeholder image" class="lg:w-[70%] w-full object-cover h-[400px] rounded-lg shadow-md">
                 </div>
-                <div class="w-[40%] ml-auto">
+                <div class="lg:w-[40%] ml-auto">
                     <h2 class="text-2xl font-bold mb-4">Each school is given focus for 3 years, where SEL frameworks are set in the school eco-system to aid educators in delivering better pedagogical practices and parent sensitization programs are conducted to build healthier home environments. In the due process of training teachers and equipping parents, the students are empowered with 21st-century SEL skills.</h2>
                 </div>
             </section>
@@ -175,17 +223,13 @@
                     </ul>
                 </div>
                 <div class="lightup-footer__links-column responsive">
-                    <h3 class="lightup-footer__column-title font-bold text-xl">Help</h3>
+                    <h3 class="lightup-footer__column-title font-bold text-xl">Corporate Office</h3>
                     <ul class="lightup-footer__link-list">
-                        <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Contact us</a></li>
+                        <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link flex gap-2">
+                           <img src = "https://icons.veryicon.com/png/o/commerce-shopping/e-commerce-website-icon/address-81.png" class="w-5" style="filter: invert();" /> 139, First Floor, Vardhaman Plaza, Vasundhara Enclave, New Delhi - 110096</a></li>
                     </ul>
                 </div>
-                <div class="lightup-footer__links-column responsive">
-                    <h3 class="lightup-footer__column-title font-bold text-xl">Donate</h3>
-                    <ul class="lightup-footer__link-list">
-                        <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Collaborate</a></li>
-                    </ul>
-                </div>
+    
             </div>
         </div>
         <div class="lightup-footer__bottom">
@@ -234,4 +278,5 @@
   </script>
 <script src = "../Assets/animate.js"></script>
 <script src = "gallery.js"></script> 
+<script src="../navbar.js"></script>
 </html> 

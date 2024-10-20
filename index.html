@@ -18,8 +18,8 @@
 </head>
 <body>
     <!-- Navbar Component. -->
-    <div class="navbar m-5">
-    <ul class="flex align-items-center items-center">
+    <div class="navbar m-5 hidden lg:block">
+        <ul class="flex align-items-center items-center">
         <li class="nav logo"><img src = "Assets/logo.avif" width="70px"></li>
         <div class="responsive middle w-full flex justify-center align-items-center">
             <li class="nav nav_items text-small pr-6 nav_active"><a href = "index.html">Home</a></li>
@@ -44,6 +44,56 @@
     <li class="nav ml-auto"><button class="btn p-3 w-[140px] rounded-lg bg-[#E25C33] font-semibold text-sm text-white flex items-center justify-center"><img src = "Assets/Giving.png" class = "mr-2" width="20px">Donate Now</button></li>
     </ul>
     </div>
+    <div class="mobile w-full flex">
+        <img src="Assets/logo.avif" class="lg:hidden" width="70px" alt="Logo">
+        <button id="mobile-menu-button" class="lg:hidden ml-auto mr-3 text-orange-500 hover:text-orange-600 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        
+        <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-white">
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-4">
+              <button id="close-menu-button" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <nav data-aos="fade-in">
+              <ul class="space-y-4">
+                <li><a href="index.html" class="block py-2 text-gray-800 hover:text-gray-900">Home</a></li>
+                <li><a href="about-us.html" class="block py-2 text-gray-800 hover:text-gray-900">About Us</a></li>
+                <li><a href="team.html" class="block py-2 text-gray-800 hover:text-gray-900">Our Team</a></li>
+                <li>
+                  <button id="dropdown-toggle" class="flex items-center justify-between w-full py-2 text-gray-800 hover:text-gray-900">
+                    Our Programs
+                    <svg class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+                  <ul id="dropdown-menu" class="hidden ml-4 mt-2 space-y-2">
+                    <li><a href="projects/project-phoenix.html" class="block py-2 text-gray-800 hover:text-gray-900">Project Phoenix</a></li>
+                    <li><a href="projects/rishta-khud-se.html" class="block py-2 text-gray-800 hover:text-gray-900">Rishta Khud Se</a></li>
+                    <li><a href="projects/lightup-academy.html" class="block py-2 text-gray-800 hover:text-gray-900">Light Up Academy</a></li>
+                    <li><a href="projects/wings-of-azadi.html" class="block py-2 text-gray-800 hover:text-gray-900">Wings of Azadi</a></li>
+                    <li><a href="projects/covid19-relief-work.html" class="block py-2 text-gray-800 hover:text-gray-900">Covid-19 Relief Work</a></li>
+                  </ul>
+                </li>
+                <li><a href="media.html" class="block py-2 text-gray-800 hover:text-gray-900">Our Impact</a></li>
+              </ul>
+            </nav>
+            <div class="mt-6">
+                <a href = "https://rzp.io/l/donate-LU-2"> <button class="btn w-full p-3 rounded-lg bg-[#E25C33] font-semibold text-sm text-white flex items-center justify-center">
+              <img src="Assets/Giving.png" class="mr-2" width="20px" alt="Donate icon">
+                Donate Now
+              </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     <!-- Hero Section -->
     <div class="w-full mb-20">
     <div class="hero flex justify-center w-full ">
@@ -219,34 +269,36 @@
     </p>
 
     </div>
-    <div class="mt-3 form_container flex justify-between">
+    <div class="mt-3  flex justify-between">
         <div class="left_form mt-auto mb-auto ">
+            <form class="form_container">
+
         <div class="name_container gap-3 flex">       
         <!-- A text input -->
             <div class="flex flex-col">
                 <label class = "font-semibold text-lg" for="firstname">First Name</label>
-                <input type="text"  name="firstname" placeholder="First Name" class="input_form p-3 max-w-[180px]">
+                <input type="text"  name="firstname" required placeholder="First Name" class="input_form p-3 max-w-[180px]">
             </div>
         <!-- A text input ends -->
         <!-- A text input -->
             <div class="flex flex-col">
-                <label class = "font-semibold text-lg" for="firstname">Last Name</label>
-                <input type="text"  name="lastname" placeholder="Last Name" class="input_form p-3 max-w-[180px]">
+                <label class = "font-semibold text-lg" for="lastname">Last Name</label>
+                <input type="text"  name="lastname" required placeholder="Last Name" class="input_form p-3 max-w-[180px]">
             </div>
         <!-- A text input ends -->
         </div>
         
         <div class="flex flex-col mt-6">
-            <label class = "font-semibold text-lg" for="firstname">Email</label>
-            <input type="email"  name="email" placeholder="Email ID xyz@gmail.com" class="input_form p-3 max-w-full">
+            <label class = "font-semibold text-lg" for="email">Email</label>
+            <input type="email"  name="email" required placeholder="Email ID xyz@gmail.com" class="input_form p-3 max-w-full">
         </div>
         <div class="flex flex-col mt-6">
             <label class = "font-semibold text-lg" for="firstname">Phone</label>
-            <input type="email"  name="email" placeholder="Phone no like 91XXXXXXXX" class="input_form p-3 max-w-full">
+            <input type="tel"  name="phone" placeholder="Phone no like 91XXXXXXXX" class="input_form p-3 max-w-full">
         </div>
         <div class="flex flex-col mt-6">
             <label class = "font-semibold text-lg" for="firstname">Message</label>
-            <textarea name="message" id="message" placeholder="Leave us a message" class="input_form p-3 max-w-full"></textarea>
+            <textarea name="message" id="message" required placeholder="Leave us a message" class="input_form p-3 max-w-full"></textarea>
         </div>
         <button type="submit" class="text-center bg-[#EF7427] max-w-full p-3 font-semibold text-white rounded-md mt-6 mb-6">Send Message</button>
         </div>
@@ -254,6 +306,7 @@
             <img src="Assets/heartimage.png" class="m-20" width="500px" alt = "heartimage"/>
         </div>
     </div>
+</form>
  </section>
 
  <!-- Stay updated -->
@@ -288,15 +341,10 @@
                 </ul>
             </div>
             <div class="lightup-footer__links-column responsive">
-                <h3 class="lightup-footer__column-title font-bold text-xl">Help</h3>
+                <h3 class="lightup-footer__column-title font-bold text-xl">Corporate Office</h3>
                 <ul class="lightup-footer__link-list">
-                    <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="lightup-footer__links-column responsive">
-                <h3 class="lightup-footer__column-title font-bold text-xl">Donate</h3>
-                <ul class="lightup-footer__link-list">
-                    <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link">Collaborate</a></li>
+                    <li class="lightup-footer__link-item"><a href="#" class="lightup-footer__link flex gap-2">
+                       <img src = "https://icons.veryicon.com/png/o/commerce-shopping/e-commerce-website-icon/address-81.png" class="w-5" style="filter: invert();" /> 139, First Floor, Vardhaman Plaza, Vasundhara Enclave, New Delhi - 110096</a></li>
                 </ul>
             </div>
         </div>
@@ -346,4 +394,6 @@
   </script>
 <script src = "Assets/animate.js"></script>
 <script src = "Assets/accordian.js"></script>
+<script src="navbar.js"></script>
+  <script src="googleSheet.js"></script>
 </html>
