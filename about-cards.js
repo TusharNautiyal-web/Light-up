@@ -45,11 +45,11 @@ const cardContainer = document.getElementById('card-container');
 
 cards.forEach(card => {
     const cardElement = document.createElement('div');
-    cardElement.className = 'w-full sm:w-1/2 md:w-1/3 p-4';
+    cardElement.className = 'w-full md:w-1/3 p-4';
     cardElement.innerHTML = `
-                <div class="relative group items-center w-[300px] cursor-pointer">
+                <div class="relative group items-center max-w-[300px] min-w-[260px]  mx-auto cursor-pointer">
                     <h2 class="text-2xl font-bold text-center mb-2">${card.title}</h2>
-                    <div class="relative rounded-lg w-[300px] hover:border-2"  style="border-color: ${card.color};">
+                    <div class="relative rounded-lg min-w-[260px] max-w-[300px] hover:border-2"  style="border-color: ${card.color};">
                         <img src="Assets/values/${card.image_url}" alt="${card.title}" class="w-[300px] object-contain rounded-lg">
                         <div class="absolute inset-0 bg-white bg-opacity-90 rounded-lg p-4 px-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <p class="text-lg">${card.description}</p>

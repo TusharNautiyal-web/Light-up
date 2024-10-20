@@ -313,7 +313,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-620px * 5));
+        transform: translateX(calc(-700px * 5));
     }
 }
 .testimonials{
