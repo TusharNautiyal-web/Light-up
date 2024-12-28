@@ -8,7 +8,7 @@ const programs = [
     {
         name: 'Rishta Khud Se',
         description: 'Rishta Khud Se is a comprehensive SEL intervention is a form of a three year continued support through Social and Emotional Learning workshops with children, capacity building sessions for teachers and awareness sessions with parents that aims to bring a positive shift in their emotional well-being and mental health.',
-        image: 'Assets/Projects/rishtakhudse.png',
+        image: 'Assets/Projects/Rishtakhudse.png',
         link: '/Programs/rishta-khud-se'
     },
     {
