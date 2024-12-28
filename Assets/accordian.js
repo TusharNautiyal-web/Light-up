@@ -8,7 +8,7 @@ const programs = [
     {
         name: 'Rishta Khud Se',
         description: 'Rishta Khud Se is a comprehensive SEL intervention is a form of a three year continued support through Social and Emotional Learning workshops with children, capacity building sessions for teachers and awareness sessions with parents that aims to bring a positive shift in their emotional well-being and mental health.',
-        image: 'Assets/Projects/Rishtakhudse.png',
+        image: 'Assets/Projects/rishtakhudse.png',
         link: '/Programs/rishta-khud-se'
     },
     {
@@ -26,7 +26,7 @@ const programs = [
     {
         name: 'Covid-19 Relief Work',
         description: 'An initiative to support the communities in the form of relief kits inclusive of food, healthcare and hygiene needs , bridging the gap to provide access to social-security schemes and covid SEL kits to last mile parts of India.',
-        image: 'Assets/Projects/Reliefwork.png',
+        image: 'Assets/Projects/reliefworks.png',
         link: '/Programs/covid19-relief-work'
     }
 ];
